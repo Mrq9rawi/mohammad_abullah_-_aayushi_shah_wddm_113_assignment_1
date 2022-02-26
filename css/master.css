@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header a {
+	background-color: #2c3964;
+	color: white;
+	position: fixed;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	z-index: 1;
+}
+
+header a:hover {
+	background-color: #e8234d;
+}	
+
+@media (max-width: 550px) {
+	header a {
+		font-size: 11px;
+	}
+}
+
+main .landing {
+	background-color: #182947;
+	height: 100vh;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 50%;
+	width: 100vw;
+	overflow: hidden;
+}
+
+main .landing img {
+	position: absolute;
+	left: 55%;
+	transform: translate(-50%);
+	top: -2%;
+	width: 115vw;
+	max-width: 115vw;
+}
+
+@media (max-width: 991px) {
+	main .landing img {
+		max-width: 130vw;
+	}
+}
+
+@media (max-width: 550px) {
+	main .landing img {
+		max-width: 190vw;
+	}
+}
+
+main .landing .content {
+	position: absolute;
+	left: 30%;
+	top: 22%;
+	-webkit-transform: skewY(-9deg);
+	-o-transform: skewY(-9deg);
+	-moz-transform: skewY(-9deg);
+	-ms-transform: skewY(-9deg);
+	transform: skewY(-9deg);
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	main .landing .content {
+		top: 15%;
+	}
+}
+
+@media (max-width: 767px) {
+	main .landing .content {
+		top: 10%;
+		left: 30%;
+	}
+}
+
+@media (max-width: 551px) {
+	main .landing .content {
+		top: 5%;
+	}
+}
+
+main .landing .content .h1 {
+	color: white;
+	font-family: "Sedgwick Ave Display", cursive;
+	font-size: 9.3vw;
+}
+
+main .content .h1 .of {
+	font-family: "Dancing Script", cursive;
+	color: #e8234d;
+}
+
+main .content .h1 .js {
+	display: block;
+}
+
+main .content .h2 {
+	font-size: 2.1vw;
+	color: #e8234d;
+	font-weight: bold;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	font-family: "Merriweather", serif;
+}
+
+main .content .h3 {
+	background-color: #006e74;
+	color: white;
+	padding: 10px;
+	font-family: "Merriweather", serif;
+	font-size: 2.4vw;
+	width: fit-content;
+	margin: 0 auto 0.5rem;
+}
+
+main .content .h4 {
+	color: white;
+	font-family: "Merriweather", serif;
+	font-size: 1.8vw;
+}
